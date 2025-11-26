@@ -1,0 +1,266 @@
+/* ---------------------------------------------
+   RESET E BASE
+--------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ---------------------------------------------
+   VARIÁVEIS DE TEMA (CLARO / ESCURO)
+--------------------------------------------- */
+
+:root {
+  --bg: #ffffff;
+  --text: #222;
+  --text-soft: #555;
+  --primary: #0084d8;
+  --primary-dark: #006bb0;
+  --header-bg: #f8f8f8;
+  --card-bg: #ffffff;
+  --card-border: #eaeaea;
+}
+
+body.dark {
+  --bg: #0e1117;
+  --text: #e2e8f0;
+  --text-soft: #94a3b8;
+  --primary: #3ea8ff;
+  --primary-dark: #1a7fcc;
+  --header-bg: #1a1f25;
+  --card-bg: #11161d;
+  --card-border: #222b35;
+}
+
+/* ---------------------------------------------
+   CABEÇALHO
+--------------------------------------------- */
+
+header {
+  width: 100%;
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--card-border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar {
+  max-width: 1280px;
+  margin: auto;
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-img {
+  height: 38px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--text);
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* BOTÕES */
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+/* DARK MODE */
+
+.theme-toggle {
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+
+/* ---------------------------------------------
+   HERO
+--------------------------------------------- */
+
+.hero {
+  max-width: 1280px;
+  margin: 60px auto;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 520px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.hero-text p {
+  margin-top: 15px;
+  color: var(--text-soft);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.hero-img {
+  width: 480px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* ---------------------------------------------
+   SESSÕES COM TÍTULO
+--------------------------------------------- */
+
+.section {
+  max-width: 1280px;
+  margin: 80px auto;
+  padding: 0 25px;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 34px;
+  color: var(--text);
+  margin-bottom: 40px;
+}
+
+/* ---------------------------------------------
+   CARDS DE SOLUÇÕES
+--------------------------------------------- */
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 28px;
+  border-radius: 15px;
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+/* ---------------------------------------------
+   FOOTER
+--------------------------------------------- */
+
+footer {
+  margin-top: 80px;
+  padding: 40px 20px;
+  background: var(--header-bg);
+  border-top: 1px solid var(--card-border);
+  text-align: center;
+  color: var(--text-soft);
+  font-size: 14px;
+}
+
+/* ---------------------------------------------
+   RESPONSIVIDADE
+--------------------------------------------- */
+
+@media (max-width: 980px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-img {
+    width: 100%;
+    max-width: 420px;
+  }
+}
