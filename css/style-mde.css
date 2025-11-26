@@ -482,3 +482,64 @@ body.theme-dark .hero-glass {
     grid-template-columns: 1fr;
   }
 }
+/* ---------------------------------------------
+   CABEÇALHO — REFINADO
+--------------------------------------------- */
+
+header {
+  width: 100%;
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--card-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  max-width: 1280px;
+  margin: auto;
+  padding: 16px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-img {
+  height: 44px;
+  width: auto;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* Ocultar subtexto antigo */
+.subtitle {
+  display: none !important;
+}
+
+/* Links do menu */
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16.5px;
+  color: var(--text);
+  transition: 0.2s;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
