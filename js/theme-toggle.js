@@ -1,33 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const toggleBtn = document.querySelector("[data-theme-toggle]");
-  const icon = toggleBtn?.querySelector(".theme-toggle-icon");
-  const label = toggleBtn?.querySelector(".theme-toggle-label");
+  const toggle = document.querySelector("[data-theme-toggle]");
   const body = document.body;
+  const icon = toggle.querySelector(".icon");
+  const label = toggle.querySelector(".label");
 
-  // aplica tema salvo
   const saved = localStorage.getItem("mde-theme");
-  if (saved === "dark") {
-    body.classList.remove("theme-light");
-    body.classList.add("theme-dark");
+  if (saved === "dark") body.classList.replace("theme-light", "theme-dark");
+
+  function sync() {
+    const dark = body.classList.contains("theme-dark");
+    icon.textContent = dark ? "☀️" : "🌙";
+    label.textContent = dark ? "Modo claro" : "Modo escuro";
   }
 
-  function syncLabel() {
-    const isDark = body.classList.contains("theme-dark");
-    if (!icon || !label) return;
-    icon.textContent = isDark ? "☀️" : "🌙";
-    label.textContent = isDark ? "Modo claro" : "Modo escuro";
-  }
+  sync();
 
-  syncLabel();
-
-  toggleBtn?.addEventListener("click", () => {
-    const isDark = body.classList.toggle("theme-dark");
-    if (!isDark) {
-      body.classList.add("theme-light");
-    } else {
-      body.classList.remove("theme-light");
-    }
-    localStorage.setItem("mde-theme", isDark ? "dark" : "light");
-    syncLabel();
+  toggle.addEventListener("click", () => {
+    const dark = body.classList.toggle("theme-dark");
+    if (!dark) body.classList.add("theme-light");
+    localStorage.setItem("mde-theme", dark ? "dark" : "light");
+    sync();
   });
 });
