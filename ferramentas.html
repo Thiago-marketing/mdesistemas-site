@@ -1,1 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Ferramentas Gratuitas • MDE Sistemas</title>
+
+  <meta name="description"
+    content="Ferramentas gratuitas da MDE Sistemas para auxiliar hotéis e pousadas: simulador de ocupação e receita, checklist profissional e pré check-in online lite." />
+
+  <meta property="og:title" content="Ferramentas Gratuitas • MDE Sistemas" />
+  <meta property="og:description" content="Use gratuitamente nossas ferramentas digitais para hoteleiros." />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="nav-left">
+        <img src="img/logo-mde.png" alt="Logo MDE Sistemas" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">MDE Sistemas</span>
+          <span class="logo-subtitle">Hotelaria conectada</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#checklist">Checklist</a>
+        <a href="#precheckin">Pré Check-in</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>
+          Ferramentas gratuitas para <span>melhorar</span> sua gestão hoteleira.
+        </h1>
+        <p class="hero-subtitle">
+          Produtos auxiliares criados para ajudar você a analisar, organizar e simplificar
+          sua operação antes mesmo de contratar um sistema completo.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#simulador" class="btn btn-primary">Começar pelo simulador</a>
+          <a href="index.html" class="btn btn-ghost">Voltar ao site oficial</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="img/ferramentas-mde-dashboard.jpg"
+             alt="Ferramentas digitais para hoteleiros MDE Sistemas" />
+      </div>
+    </div>
+  </section>
+
+  <!-- LISTA DAS 3 FERRAMENTAS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Escolha uma das ferramentas abaixo</h2>
+        <p>Use gratuitamente, sem cadastro obrigatório.</p>
+      </div>
+
+      <div class="iscas-grid">
+
+        <!-- Simulador -->
+        <article class="isca-card">
+          <div class="isca-image">
+            <img src="img/simulador-ocupacao-mde.jpg"
+                 alt="Simulador de ocupação e receita MDE Sistemas" />
+          </div>
+          <div class="isca-body">
+            <h3>Simulador de Ocupação & Receita</h3>
+            <p>
+              Estime a receita do hotel com base em ocupação, diária média e número de UHs.
+            </p>
+            <button class="btn btn-full" data-scroll-target="#simulador">
+              Acessar simulador
+            </button>
+          </div>
+        </article>
+
+        <!-- Checklist -->
+        <article class="isca-card">
+          <div class="isca-image">
+            <img src="img/checklist-hotelaria-mde.jpg"
+                 alt="Checklist profissional de hotelaria" />
+          </div>
+          <div class="isca-body">
+            <h3>Checklist Profissional</h3>
+            <p>
+              Avalie rapidamente o nível de organização do hotel e identifique oportunidades.
+            </p>
+            <button class="btn btn-full" data-scroll-target="#checklist">
+              Fazer checklist
+            </button>
+          </div>
+        </article>
+
+        <!-- Pré Check-in -->
+        <article class="isca-card">
+          <div class="isca-image">
+            <img src="img/pre-checkin-lite-mde.jpg"
+                 alt="Pré check-in online simplificado" />
+          </div>
+          <div class="isca-body">
+            <h3>Pré Check-in Online Lite</h3>
+            <p>
+              Simule coleta antecipada de informações dos hóspedes.
+            </p>
+            <button class="btn btn-full" data-scroll-target="#precheckin">
+              Acessar pré check-in
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SIMULADOR -->
+  <section id="simulador" class="section section-alt">
+    <div class="container section-split">
+
+      <div class="section-text">
+        <h2>Simulador de Ocupação & Receita</h2>
+        <p>
+          Informe alguns dados do seu hotel e obtenha uma projeção simples de receita mensal.
+        </p>
+
+        <form id="simulator-form" class="card-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="uhs">Número de UHs</label>
+              <input type="number" id="uhs" required />
+            </div>
+            <div class="form-group">
+              <label for="ocupacao">Ocupação atual (%)</label>
+              <input type="number" id="ocupacao" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="diaria">Diária média (R$)</label>
+              <input type="number" id="diaria" required />
+            </div>
+            <div class="form-group">
+              <label for="nomeHotel">Nome do hotel</label>
+              <input type="text" id="nomeHotel" />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            Calcular
+          </button>
+        </form>
+      </div>
+
+      <div class="section-text">
+        <div id="simulator-result" class="card-result">
+          <h3>Resultados</h3>
+          <p>Os dados aparecerão aqui após o cálculo.</p>
+
+          <div class="result-grid hidden">
+            <div class="result-item">
+              <span class="result-label">Receita atual:</span>
+              <span id="receitaAtual" class="result-value">R$ 0,00</span>
+            </div>
+
+            <div class="result-item">
+              <span class="result-label">Receita potencial:</span>
+              <span id="receitaPotencial" class="result-value">R$ 0,00</span>
+            </div>
+
+            <div class="result-item">
+              <span class="result-label">Diferença:</span>
+              <span id="receitaDiferenca" class="result-value destaque">R$ 0,00</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CHECKLIST -->
+  <section id="checklist" class="section">
+    <div class="container section-split">
+
+      <div class="section-text">
+        <h2>Checklist Profissional de Hotelaria</h2>
+        <p>Avalie a organização da sua operação.</p>
+
+        <form id="checklist-form" class="card-form">
+
+          <div class="form-group">
+            <label for="checklistNome">Seu nome</label>
+            <input type="text" id="checklistNome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="checklistHotel">Nome do hotel</label>
+            <input type="text" id="checklistHotel" required />
+          </div>
+
+          <div class="form-group">
+            <label for="checklistPorte">Porte</label>
+            <select id="checklistPorte" required>
+              <option value="">Selecione</option>
+              <option value="pequeno">Pequeno</option>
+              <option value="medio">Médio</option>
+              <option value="grande">Grande</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Como você avalia:</label>
+
+            <div class="rating-group">
+              <span>Recepção</span>
+              <select id="checklistRecepcao">
+                <option value="">-</option>
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+              </select>
+            </div>
+
+            <div class="rating-group">
+              <span>Governança</span>
+              <select id="checklistGovernanca">
+                <option value="">-</option>
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+              </select>
+            </div>
+
+            <div class="rating-group">
+              <span>Financeiro</span>
+              <select id="checklistFinanceiro">
+                <option value="">-</option>
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            Gerar diagnóstico
+          </button>
+        </form>
+      </div>
+
+      <div class="section-text">
+        <div class="card-result">
+          <h3>Resumo</h3>
+          <p>O resultado aparecerá aqui.</p>
+
+          <div class="checklist-summary hidden">
+            <p id="checklistResumoTexto"></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRÉ CHECK-IN -->
+  <section id="precheckin" class="section section-alt">
+    <div class="container section-split">
+
+      <div class="section-text">
+        <h2>Pré Check-in Online Lite</h2>
+        <p>Simule o preenchimento antecipado dos dados do hóspede.</p>
+
+        <form id="precheckin-form" class="card-form">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="preHotel">Hotel</label>
+              <input type="text" id="preHotel" required />
+            </div>
+
+            <div class="form-group">
+              <label for="preHospede">Hóspede</label>
+              <input type="text" id="preHospede" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="preDataEntrada">Data de entrada</label>
+              <input type="date" id="preDataEntrada" required />
+            </div>
+
+            <div class="form-group">
+              <label for="preEmail">E-mail</label>
+              <input type="email" id="preEmail" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="preObservacoes">Observações</label>
+            <textarea id="preObservacoes" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            Registrar pré check-in
+          </button>
+
+        </form>
+      </div>
+
+      <div class="section-text">
+        <div class="card-result">
+          <h3>Resultado</h3>
+          <p>Os dados aparecerão aqui.</p>
+
+          <div class="precheckin-summary hidden">
+            <p id="precheckinResumoTexto"></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="currentYear"></span> MDE Sistemas • Ferramentas gratuitas para hotelaria.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
 
