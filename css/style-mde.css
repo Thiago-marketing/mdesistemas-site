@@ -330,3 +330,115 @@ body.theme-dark .hero-glass {
     height: 260px;
   }
 }
+/* ======================================================
+   CORREÇÃO DO CABEÇALHO (HTML com .mde-header)
+   Alinha logo, menu, modo escuro e botões Hub/Conta
+====================================================== */
+
+.mde-header {
+  width: 100%;
+  background: var(--bg-main);
+  border-bottom: 1px solid var(--card-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.mde-header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 18px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo + texto */
+.mde-logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mde-logo-area img {
+  height: 44px;
+  width: auto;
+}
+
+.mde-logo-area .logo-text-main {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* se existir subtítulo, some */
+.mde-logo-area .logo-text-sub {
+  display: none;
+}
+
+/* Menu principal */
+.mde-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.mde-nav a {
+  color: var(--text-main);
+  font-size: 16.5px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.mde-nav a:hover {
+  color: var(--mde-blue);
+}
+
+/* Ações à direita (modo / acessar / criar conta) */
+.mde-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* botões do header reaproveitando os estilos já definidos */
+.mde-actions .btn-outline {
+  border: 2px solid var(--mde-blue);
+  color: var(--mde-blue);
+  background: transparent;
+}
+
+.mde-actions .btn-outline:hover {
+  background: var(--mde-blue);
+  color: #fff;
+}
+
+.mde-actions .btn-primary {
+  background: var(--mde-blue);
+  color: #fff;
+  border: 2px solid var(--mde-blue);
+}
+
+.mde-actions .btn-primary:hover {
+  background: var(--mde-blue-soft);
+  border-color: var(--mde-blue-soft);
+}
+
+/* botão de modo claro/escuro no header */
+.mde-actions .theme-toggle {
+  padding: 8px 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--text-main);
+}
+
+/* Responsivo: some menu grande em telas menores */
+@media (max-width: 1020px) {
+  .mde-nav {
+    display: none;
+  }
+}
+
