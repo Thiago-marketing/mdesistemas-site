@@ -441,4 +441,38 @@ body.theme-dark .hero-glass {
     display: none;
   }
 }
+/* ================================================
+   AJUSTE FINAL DO HEADER — SOMENTE LOGO
+================================================ */
+
+.mde-logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Esconde o texto "MDE Sistemas" */
+.mde-logo-area .logo-text-main {
+  display: none !important;
+}
+
+/* Se houver subtítulo, esconde também */
+.mde-logo-area .logo-text-sub {
+  display: none !important;
+}
+
+/* Ajusta alinhamento do header após remover o texto */
+.mde-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Logo */
+.mde-logo-area img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
 
