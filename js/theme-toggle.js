@@ -22,3 +22,18 @@ document.addEventListener("DOMContentLoaded", () => {
     sync();
   });
 });
+// theme-toggle.js
+const btn = document.getElementById("theme-toggle");
+
+btn.addEventListener("click", () => {
+  document.body.classList.toggle("theme-dark");
+  document.body.classList.toggle("theme-light");
+
+  btn.querySelector(".icon").textContent =
+    document.body.classList.contains("theme-dark") ? "☀️" : "🌙";
+
+  btn.querySelector(".label").textContent =
+    document.body.classList.contains("theme-dark")
+      ? "Modo claro"
+      : "Modo escuro";
+});
