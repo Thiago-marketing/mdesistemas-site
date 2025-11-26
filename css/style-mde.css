@@ -115,165 +115,61 @@ img {
   margin-bottom: 20px;
 }
 
-/* ======================================================
-   HEADER • MDE ENTERPRISE
-====================================================== */
-.mde-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(16px);
-  background: rgba(255,255,255,0.9);
-  border-bottom: 1px solid rgba(0,0,0,0.07);
-  transition: var(--transition);
-}
+/* ---------------------------------------------
+   BOTÕES HEADER — VERSÃO PREMIUM
+--------------------------------------------- */
 
-body.theme-dark .mde-header {
-  background: rgba(10,16,28,0.9);
-  border-bottom-color: rgba(255,255,255,0.08);
-}
-
-.mde-header-inner {
-  height: 86px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* LOGO */
-.mde-logo-area {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.mde-logo-img {
-  height: 44px;
-}
-
-.mde-logo-text .title {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: var(--text-main);
-}
-
-body.theme-dark .mde-logo-text .title {
-  color: #fff;
-}
-
-.mde-logo-text .subtitle {
-  font-size: 0.82rem;
-  color: var(--text-soft);
-  margin-top: -4px;
-}
-
-/* NAV */
-.mde-nav {
-  display: flex;
-  gap: 26px;
-}
-
-.mde-nav a {
-  font-weight: 600;
-  color: var(--text-main);
-  opacity: 0.85;
-}
-
-.mde-nav a:hover {
-  opacity: 1;
-  color: var(--mde-blue);
-}
-
-/* HEADER ACTIONS */
-.mde-actions {
+.nav-actions {
   display: flex;
   align-items: center;
   gap: 14px;
 }
 
-/* DARK MODE TOGGLE */
-.theme-switch {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 7px 12px;
+.btn {
+  padding: 10px 22px;
+  font-size: 15px;
   border-radius: 50px;
-  border: 1px solid rgba(0,0,0,0.15);
-  background: rgba(255,255,255,0.6);
   cursor: pointer;
-  font-size: 0.85rem;
+  transition: 0.25s ease;
+  border: 2px solid transparent;
+  font-weight: 600;
 }
 
-body.theme-dark .theme-switch {
-  background: rgba(255,255,255,0.08);
-  border-color: rgba(255,255,255,0.12);
-  color: #fff;
-}
-
-/* ======================================================
-   BOTÕES
-====================================================== */
-
-.btn-mde-primary,
-.btn-mde-outline,
-.btn-mde-primary-lg,
-.btn-mde-outline-lg {
-  border-radius: 60px;
-  padding: 12px 22px;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--transition);
-}
-
-/* BOTÃO PRIMÁRIO */
-.btn-mde-primary {
-  background: var(--mde-blue);
-  color: #fff;
-}
-
-.btn-mde-primary:hover {
-  background: var(--mde-blue-dark);
-}
-
-/* BOTÃO OUTLINE */
-.btn-mde-outline {
-  border: 2px solid var(--mde-blue);
-  color: var(--mde-blue);
+/* Botão Acessar Hub — Outline */
+.btn-outline {
   background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
 }
 
-.btn-mde-outline:hover {
-  background: var(--mde-blue);
-  color: #fff;
-}
-
-/* BOTÕES GRANDES */
-.btn-mde-primary-lg {
-  font-size: 1.1rem;
-  background: var(--mde-blue);
-  padding: 16px 32px;
+.btn-outline:hover {
+  background: var(--primary);
   color: white;
 }
 
-.btn-mde-primary-lg:hover {
-  background: var(--mde-blue-dark);
-}
-
-.btn-mde-outline-lg {
-  font-size: 1.1rem;
-  padding: 16px 32px;
-  border: 2px solid var(--mde-blue);
-  color: var(--mde-blue);
-  background: transparent;
-}
-
-.btn-mde-outline-lg:hover {
-  background: var(--mde-blue);
+/* Botão Criar Conta — Premium */
+.btn-primary {
+  background: var(--primary);
   color: #fff;
+  border: 2px solid var(--primary);
 }
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* Botão modo claro/escuro */
+.theme-toggle {
+  padding: 8px 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--text);
+}
+
 
 /* ======================================================
    HERO • institucional
