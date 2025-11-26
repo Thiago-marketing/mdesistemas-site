@@ -1,233 +1,176 @@
-<header class="navbar">
-  <div class="container nav-content">
-    <div class="nav-left">
-      <img src="img/logo-mde.png" alt="Logo MDE Sistemas" class="logo-img" />
-      <div class="logo-text">
-        <span class="logo-title">MDE Sistemas</span>
-        <span class="logo-subtitle">Hotelaria conectada e inteligente</span>
-      </div>
-    </div>
-
-    <nav class="nav-links">
-      <a href="index.html">Início</a>
-      <a href="index.html#produtos">Produtos</a>
-      <a href="ferramentas.html">Ferramentas Gratuitas</a>
-      <a href="index.html#contato">Contato</a>
-    </nav>
-
-    <!-- BOTÃO DARK/LIGHT -->
-    <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">
-      🌙
-    </button>
-  </div>
-</header>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>MDE Sistemas • Software de Gestão Hoteleira</title>
+  <title>MDE Sistemas • Soluções inteligentes para a hotelaria moderna</title>
 
-  <!-- SEO -->
   <meta name="description"
-    content="MDE Sistemas: software profissional para hotéis e pousadas. PMS completo, reservas online, financeiro, governança e ferramentas gratuitas para otimizar sua operação." />
+        content="Plataforma digital completa para hotéis e pousadas. O MDE Hub reúne gestão, reservas, integração e automações em um ambiente seguro e moderno.">
   <meta name="keywords"
-    content="sistema para hotel, PMS, reservas online, hotelaria, governança, financeiro hotel, MDE Sistemas, software hoteleiro" />
+        content="sistema para hotel, PMS, motor de reservas, software hoteleiro, MDE Sistemas, MDE Hub">
 
-  <meta property="og:title" content="MDE Sistemas • Software de Gestão Hoteleira" />
-  <meta property="og:description" content="Tecnologia profissional para hotéis e pousadas. Conheça o MDE." />
-
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style-enterprise.css" />
 </head>
+
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="container nav-content">
-      <div class="nav-left">
-        <img src="img/logo-mde.png" alt="Logo MDE Sistemas" class="logo-img" />
-        <div class="logo-text">
-          <span class="logo-title">MDE Sistemas</span>
-          <span class="logo-subtitle">Hotelaria conectada e inteligente</span>
+  <!-- =========== HEADER ENTERPRISE =========== -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-logo">M</div>
+        <div class="brand-text">
+          <span class="brand-title">MDE Sistemas</span>
+          <span class="brand-subtitle">Hotelaria Inteligente</span>
         </div>
       </div>
 
-      <nav class="nav-links">
-        <a href="#produtos">Produtos</a>
+      <nav class="nav">
+        <a href="#produtos">Soluções</a>
         <a href="#beneficios">Benefícios</a>
-        <a href="#ferramentas">Ferramentas Gratuitas</a>
+        <a href="#sobre">Sobre</a>
         <a href="#contato">Contato</a>
       </nav>
+
+      <div class="auth">
+        <a href="login.html" class="btn-outline">Entrar</a>
+        <a href="register.html" class="btn-primary">Criar conta</a>
+      </div>
     </div>
   </header>
 
-  <!-- HERO -->
+
+  <!-- =========== HERO ENTERPRISE =========== -->
   <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text">
+    <div class="container hero-inner">
+
+      <div class="hero-content">
         <h1>
-          O sistema hoteleiro completo para <span>profissionalizar</span> sua operação.
+          O futuro da <span class="highlight">hotelaria digital</span> começa aqui.
         </h1>
-        <p class="hero-subtitle">
-          PMS completo, reservas online, financeiro avançado, governança e ferramentas gratuitas
-          para ajudar seu hotel a crescer de forma organizada.
+        <p class="hero-sub">
+          A plataforma unificada que integra gestão, reservas online, governança,
+          financeiro e automações — tudo no <strong>MDE Hub</strong>.
         </p>
 
-        <div class="hero-cta-group">
-          <a href="#produtos" class="btn btn-primary">Conhecer os módulos</a>
-          <a href="ferramentas.html" class="btn btn-ghost">Ferramentas gratuitas</a>
+        <div class="hero-cta">
+          <a href="register.html" class="btn-primary-lg">Criar conta gratuita</a>
+          <a href="login.html" class="btn-outline-lg">Entrar no MDE Hub</a>
         </div>
       </div>
 
-      <div class="hero-image">
-        <img src="img/hero-mde-painel-hotel.jpg"
-             alt="Painel principal do sistema MDE Sistemas" />
+      <div class="hero-art">
+        <div class="hero-glass"></div>
+        <div class="hero-glow"></div>
+        <!-- imagem real será adicionada futuramente -->
       </div>
+
     </div>
   </section>
 
-  <!-- PRODUTOS -->
+
+  <!-- =========== SOLUÇÕES =========== -->
   <section id="produtos" class="section">
     <div class="container">
-      <div class="section-header">
-        <h2>Módulos do Sistema</h2>
-        <p>Conheça as principais soluções do MDE para gestão hoteleira.</p>
-      </div>
+      <h2 class="section-title">Soluções Digitais MDE</h2>
 
-      <div class="produtos-grid">
+      <div class="grid-3 fade-cards">
 
-        <article class="produto-card">
-          <img src="img/modulo-pms-mde.jpg" alt="Módulo PMS MDE Sistemas" />
-          <h3>PMS Completo</h3>
-          <p>
-            Controle total de check-ins, check-outs, reservas, contas, hóspedes, faturas e
-            toda operação hoteleira.
-          </p>
-          <a href="/produtos/pms.html" class="btn-link">Ver detalhes →</a>
-        </article>
+        <div class="card">
+          <h3>Painel MDE Hub</h3>
+          <p>Acesse ferramentas, relatórios, integrações e controles em um só ambiente.</p>
+        </div>
 
-        <article class="produto-card">
-          <img src="img/modulo-reserva-online-mde.jpg" alt="Motor de reservas online MDE" />
-          <h3>Reserva Online</h3>
-          <p>
-            Sistema de reservas direto pelo site do hotel, com confirmação automática e
-            integração ao PMS.
-          </p>
-          <a href="/produtos/reserva-online.html" class="btn-link">Ver detalhes →</a>
-        </article>
+        <div class="card">
+          <h3>Motor de Reservas</h3>
+          <p>Reservas diretas, pagamento integrado e bloqueios automáticos.</p>
+        </div>
 
-        <article class="produto-card">
-          <img src="img/modulo-financeiro-mde.jpg" alt="Financeiro avançado MDE Sistemas" />
-          <h3>Financeiro Avançado</h3>
-          <p>
-            Contas a pagar, receber, fluxo de caixa, relatórios e organização completa da vida
-            financeira do hotel.
-          </p>
-          <a href="/produtos/financeiro.html" class="btn-link">Ver detalhes →</a>
-        </article>
+        <div class="card">
+          <h3>Financeiro Inteligente</h3>
+          <p>Controle completo de receitas, despesas e relatórios avançados.</p>
+        </div>
 
-        <article class="produto-card">
-          <img src="img/modulo-governanca-mde.jpg" alt="Governança e limpeza MDE" />
-          <h3>Governança</h3>
-          <p>
-            Controle de quartos, status de limpeza, bloqueios, manutenção e agenda das camareiras.
-          </p>
-          <a href="/produtos/governanca.html" class="btn-link">Ver detalhes →</a>
-        </article>
+        <div class="card">
+          <h3>Gestão Hoteleira</h3>
+          <p>Check-in/out, governança, discrepância, auditoria e muito mais.</p>
+        </div>
+
+        <div class="card">
+          <h3>Integrações</h3>
+          <p>Canais de reserva, gateways de pagamento e APIs inteligentes.</p>
+        </div>
+
+        <div class="card">
+          <h3>Ferramentas Grátis</h3>
+          <p>Simuladores, checklists e módulos gratuitos para o dia a dia.</p>
+        </div>
 
       </div>
     </div>
   </section>
 
-  <!-- BENEFÍCIOS -->
-  <section id="beneficios" class="section section-alt">
+
+  <!-- =========== BENEFÍCIOS =========== -->
+  <section id="beneficios" class="section alt">
     <div class="container">
-      <div class="section-header">
-        <h2>Benefícios para o seu hotel</h2>
-        <p>Mais organização, mais vendas, menos retrabalho.</p>
-      </div>
+      <h2 class="section-title">Excelência reconhecida</h2>
 
-      <div class="beneficios-grid">
-
-        <div class="beneficio-item">
-          <h3>Otimização da operação</h3>
-          <p>Simplifique processos internos e torne a gestão mais eficiente.</p>
+      <div class="grid-3 fade-cards">
+        <div class="card">
+          <h3>35 anos de mercado</h3>
+          <p>Experiência sólida e evolução contínua da tecnologia hoteleira.</p>
         </div>
 
-        <div class="beneficio-item">
-          <h3>Mais controle financeiro</h3>
-          <p>Relatórios claros e precisos para decisões melhores.</p>
+        <div class="card">
+          <h3>Suporte consultivo</h3>
+          <p>Atendimento humano, especializado e ágil para sua operação.</p>
         </div>
 
-        <div class="beneficio-item">
-          <h3>Redução de erros</h3>
-          <p>Menos papel, menos retrabalho e menos falhas humanas.</p>
-        </div>
-
-        <div class="beneficio-item">
-          <h3>Mais vendas diretas</h3>
-          <p>Aumente a receita eliminando comissões de terceiros.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- FERRAMENTAS GRÁTIS -->
-  <section id="ferramentas" class="section">
-    <div class="container section-split">
-      <div class="section-text">
-        <h2>Ferramentas Gratuitas</h2>
-        <p>
-          Acesse nossos recursos gratuitos para avaliar sua operação e identificar
-          oportunidades de melhoria.
-        </p>
-
-        <ul class="lista-ferramentas">
-          <li>✔ Simulador de Ocupação e Receita</li>
-          <li>✔ Checklist Profissional de Hotelaria</li>
-          <li>✔ Pré Check-in Online Lite</li>
-        </ul>
-
-        <a href="ferramentas.html" class="btn btn-primary">Acessar ferramentas</a>
-      </div>
-
-      <div class="section-image">
-        <img src="img/ferramentas-mde-dashboard.jpg"
-             alt="Ferramentas digitais gratuitas MDE Sistemas" />
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section id="contato" class="section section-alt">
-    <div class="container section-split">
-      <div class="section-text">
-        <h2>Entre em Contato</h2>
-        <p>Fale com nossa equipe e conheça o sistema ideal para seu hotel.</p>
-
-        <div class="contato-bloco">
-          <p><strong>E-mail:</strong> atendimento@mdesistemas.com.br</p>
-          <p><strong>WhatsApp:</strong> (XX) XXXX-XXXX</p>
-
-          <a href="#" class="btn btn-primary">Falar com consultor</a>
+        <div class="card">
+          <h3>Infraestrutura robusta</h3>
+          <p>Ambiente seguro, escalável e preparado para alta performance.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© <span id="currentYear"></span> MDE Sistemas • Software para hotéis e pousadas.</p>
-      <p class="footer-note">
-        Soluções profissionais para gestão hoteleira.
+
+  <!-- =========== SOBRE =========== -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2 class="section-title">Sobre a MDE Sistemas</h2>
+      <p class="sobre-text">
+        Há mais de três décadas apoiando hotéis e pousadas com soluções tecnológicas eficientes,
+        conectadas e acessíveis.  
+        Agora, consolidamos nossa expertise no <strong>MDE Hub</strong>, um ambiente moderno e integrado
+        para gestão completa da sua operação.
       </p>
+    </div>
+  </section>
+
+
+  <!-- =========== CONTATO =========== -->
+  <section id="contato" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Contato</h2>
+      <p class="contato-info">
+        📧 E-mail: <a href="mailto:marketing@mde.com.br">marketing@mde.com.br</a><br>
+        📱 WhatsApp: <a href="https://wa.me/5511940277447" target="_blank">(11) 94027-7447</a><br>
+        📍 Endereço: Praça Sílvio Romero, 149 - Tatuapé, São Paulo - SP
+      </p>
+    </div>
+  </section>
+
+
+  <!-- =========== FOOTER =========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 MDE Sistemas • Todos os direitos reservados.</p>
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
 </body>
 </html>
-
