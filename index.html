@@ -5,17 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>MDE Sistemas • Tecnologia e Soluções Profissionais para Hotéis</title>
+  <title>MDE Sistemas • Tecnologia corporativa para a hotelaria</title>
 
   <meta name="description"
-    content="A MDE Sistemas entrega soluções avançadas para gestão hoteleira: PMS completo, motor de reservas, financeiro, integrações, governança e o novo MDE Hub — tudo com tecnologia corporativa e consultoria especializada.">
+    content="MDE Sistemas oferece soluções corporativas para gestão hoteleira: PMS completo, motor de reservas, financeiro, governança, integrações e o novo MDE Hub, ambiente digital unificado.">
 
   <link rel="stylesheet" href="css/style-mde-enterprise.css" />
+  <script src="js/theme-toggle.js" defer></script>
 </head>
 
-<body>
+<body class="theme-light">
 
-  <!-- =================== HEADER =================== -->
+  <!-- ================ HEADER ================ -->
   <header class="header">
     <div class="container header-inner">
       <div class="brand">
@@ -28,50 +29,65 @@
 
       <nav class="nav">
         <a href="#solucoes">Soluções</a>
-        <a href="#empresa">A Empresa</a>
+        <a href="#hub">MDE Hub</a>
+        <a href="#painel">Painéis & Inteligência</a>
+        <a href="#seguranca">Segurança</a>
         <a href="#segmentos">Segmentos</a>
+        <a href="#empresa">A Empresa</a>
         <a href="#contato">Contato</a>
       </nav>
 
-      <div class="auth">
-        <a href="login.html" class="btn-outline">Acessar Hub</a>
-        <a href="register.html" class="btn-primary">Criar conta</a>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle>
+          <span class="theme-toggle-icon">🌙</span>
+          <span class="theme-toggle-label">Modo escuro</span>
+        </button>
+
+        <div class="auth">
+          <a href="https://mde-hub.vercel.app/login.html" class="btn-outline">Acessar Hub</a>
+          <a href="https://mde-hub.vercel.app/register.html" class="btn-primary">Criar conta</a>
+        </div>
       </div>
     </div>
   </header>
 
-
-  <!-- =================== HERO =================== -->
+  <!-- ================ HERO (1) ================ -->
   <section class="hero">
     <div class="container hero-inner">
 
       <div class="hero-content">
         <h1>
-          Tecnologia corporativa para uma hotelaria mais
-          <span class="highlight">inteligente, integrada e lucrativa.</span>
+          Tecnologia corporativa para uma hotelaria
+          <span class="highlight">mais inteligente, integrada e lucrativa.</span>
         </h1>
 
         <p class="hero-sub">
-          PMS profissional, motor de reservas, financeiro avançado, governança,
-          integrações e automações — tudo evoluindo agora dentro do
-          <strong>MDE Hub</strong>, o novo ambiente digital oficial da MDE Sistemas.
+          PMS profissional, motor de reservas, financeiro avançado, governança, integrações e automações —
+          tudo evoluindo agora dentro do <strong>MDE Hub</strong>, o ambiente digital unificado da MDE Sistemas.
         </p>
 
         <div class="hero-cta">
           <a href="#solucoes" class="btn-primary-lg">Conhecer soluções</a>
-          <a href="login.html" class="btn-outline-lg">Acessar MDE Hub</a>
+          <a href="https://mde-hub.vercel.app/login.html" class="btn-outline-lg">Acessar MDE Hub</a>
         </div>
       </div>
 
       <div class="hero-image">
         <div class="hero-glass"></div>
+        <div class="hero-glow"></div>
       </div>
-
     </div>
   </section>
 
+  <!-- ================ TRUST STRIP (2) ================ -->
+  <section class="trust">
+    <div class="container trust-inner">
+      <span class="trust-label">Confiança & Experiência</span>
+      <span class="trust-text">Mais de 35 anos apoiando hotéis, pousadas e redes com tecnologia e consultoria.</span>
+    </div>
+  </section>
 
-  <!-- =================== SOLUÇÕES =================== -->
+  <!-- ================ SOLUÇÕES (3) ================ -->
   <section id="solucoes" class="section">
     <div class="container">
       <h2 class="section-title">Soluções Profissionais</h2>
@@ -80,109 +96,187 @@
 
         <div class="card">
           <h3>PMS Completo</h3>
-          <p>
-            Sistema robusto de gestão hoteleira com governança, auditoria,
-            discrepâncias, check-in/out e relatórios operacionais.
-          </p>
+          <p>Gestão hoteleira robusta com governança, auditoria, discrepâncias, check-in/out e relatórios operacionais.</p>
         </div>
 
         <div class="card">
           <h3>Motor de Reservas</h3>
-          <p>
-            Converta reservas diretas pelo site do seu hotel com pagamentos e
-            integrações automáticas.
-          </p>
+          <p>Reservas diretas pelo site do hotel, pagamentos integrados e bloqueios automáticos em um único fluxo.</p>
         </div>
 
         <div class="card">
           <h3>Financeiro Avançado</h3>
-          <p>
-            Contas a pagar/receber, centro de custos, relatórios, fluxo de caixa
-            e análises estratégicas.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Integrações Corporativas</h3>
-          <p>
-            Gateways, canais de reserva, automações, APIs e integrações com
-            sistemas parceiros.
-          </p>
+          <p>Contas a pagar/receber, centros de custos, fluxo de caixa e relatórios estratégicos para decisões seguras.</p>
         </div>
 
         <div class="card">
           <h3>Governança Inteligente</h3>
-          <p>
-            Controle total de UHs, status, limpeza, manutenção, discrepâncias e
-            produtividade da equipe.
-          </p>
+          <p>Controle de UHs, status de limpeza e manutenção, produtividade e redução de discrepâncias.</p>
         </div>
 
         <div class="card">
-          <h3>MDE Hub</h3>
-          <p>
-            O novo ambiente digital unificado com ferramentas, controle,
-            relatórios e automações.
-          </p>
+          <h3>Integrações Corporativas</h3>
+          <p>Canais de reserva, gateways de pagamento, automações e APIs conectadas ao seu ecossistema.</p>
+        </div>
+
+        <div class="card">
+          <h3>Serviços Especializados</h3>
+          <p>Implantação, treinamento, consultoria de processos e acompanhamento da operação hoteleira.</p>
         </div>
 
       </div>
     </div>
   </section>
 
+  <!-- ================ MDE HUB (4) ================ -->
+  <section id="hub" class="section alt">
+    <div class="container hub-inner">
+      <div class="hub-text">
+        <h2 class="section-title-left">MDE Hub: o centro digital da operação</h2>
+        <p>
+          O MDE Hub reúne, em um único ambiente, ferramentas, acessos, relatórios, simuladores e novas soluções digitais.
+          Ele foi pensado para facilitar o dia a dia da gestão e abrir espaço para novos recursos ao longo do tempo.
+        </p>
 
-  <!-- =================== A EMPRESA =================== -->
-  <section id="empresa" class="section alt">
-    <div class="container">
-      <h2 class="section-title">A MDE Sistemas</h2>
+        <ul class="hub-list">
+          <li>Acesso unificado às soluções MDE.</li>
+          <li>Módulos e ferramentas liberados por perfil de usuário.</li>
+          <li>Base preparada para integrações e automações futuras.</li>
+        </ul>
 
-      <p class="empresa-text">
-        Com mais de <strong>35 anos</strong> de atuação no setor hoteleiro,
-        a MDE é referência em tecnologia, consultoria e sistemas de gestão para
-        hotéis, pousadas e redes em todo o Brasil.
-      </p>
+        <div class="hub-cta">
+          <a href="https://mde-hub.vercel.app/login.html" class="btn-primary">Entrar no MDE Hub</a>
+          <a href="https://mde-hub.vercel.app/register.html" class="btn-link">Criar acesso gratuito</a>
+        </div>
+      </div>
 
-      <p class="empresa-text">
-        Nossa missão é evoluir continuamente, entregando soluções robustas,
-        confiáveis e adaptadas às necessidades reais da operação hoteleira.
-      </p>
-
-    </div>
-  </section>
-
-
-  <!-- =================== SEGMENTOS =================== -->
-  <section id="segmentos" class="section">
-    <div class="container">
-      <h2 class="section-title">Segmentos Atendidos</h2>
-
-      <div class="grid-3">
-        <div class="card">Hotéis & Resorts</div>
-        <div class="card">Pousadas</div>
-        <div class="card">Redes e Operadoras</div>
-        <div class="card">Hostels</div>
-        <div class="card">Motelaria</div>
-        <div class="card">Hospedagens corporativas</div>
+      <div class="hub-side-card">
+        <h3>Ambiente em evolução constante</h3>
+        <p>O Hub é o ponto de partida para novos recursos, testes, homologação e expansão digital da MDE.</p>
       </div>
     </div>
   </section>
 
-
-  <!-- =================== CONTATO =================== -->
-  <section id="contato" class="section alt">
+  <!-- ================ PAINÉIS & INTELIGÊNCIA (5) ================ -->
+  <section id="painel" class="section">
     <div class="container">
-      <h2 class="section-title">Contato e Atendimento</h2>
+      <h2 class="section-title">Painéis, indicadores e inteligência</h2>
 
-      <p class="contato-info">
-        📧 E-mail: <a href="mailto:marketing@mde.com.br">marketing@mde.com.br</a><br>
-        📱 WhatsApp: <a href="https://wa.me/5511940277447" target="_blank">(11) 94027-7447</a><br>
-        📍 Praça Sílvio Romero, 149 - Tatuapé, São Paulo - SP
+      <div class="analytics-grid">
+        <div class="analytics-card">
+          <h3>Indicadores operacionais</h3>
+          <p>
+            Acompanhamento de ocupação, receita, diária média e métricas essenciais para a saúde do negócio.
+          </p>
+        </div>
+
+        <div class="analytics-card">
+          <h3>Visão gerencial</h3>
+          <p>
+            Informações consolidadas por período, segmento e canal de venda, com foco em tomada de decisão.
+          </p>
+        </div>
+
+        <div class="analytics-highlight">
+          <span class="badge">Visão executiva</span>
+          <p>
+            Recursos em evolução para oferecer uma visão cada vez mais completa da operação, com foco em
+            performance e rentabilidade.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ SEGURANÇA (6) ================ -->
+  <section id="seguranca" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Segurança & Infraestrutura</h2>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Confiabilidade</h3>
+          <p>Ambiente preparado para estabilidade, desempenho e disponibilidade da operação hoteleira.</p>
+        </div>
+
+        <div class="card">
+          <h3>Proteção de dados</h3>
+          <p>Princípios de segurança e boas práticas alinhadas à proteção das informações do seu negócio.</p>
+        </div>
+
+        <div class="card">
+          <h3>Continuidade</h3>
+          <p>Processos e rotinas estruturadas para evolução contínua da plataforma e das soluções MDE.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ SEGMENTOS (7) ================ -->
+  <section id="segmentos" class="section">
+    <div class="container">
+      <h2 class="section-title">Segmentos atendidos</h2>
+
+      <div class="grid-3 segments-grid">
+        <div class="segment-pill">Hotéis urbanos</div>
+        <div class="segment-pill">Resorts & SPA</div>
+        <div class="segment-pill">Pousadas</div>
+        <div class="segment-pill">Hostels</div>
+        <div class="segment-pill">Motéis</div>
+        <div class="segment-pill">Redes & Operadoras</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ DIFERENCIAIS (8) ================ -->
+  <section id="empresa" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Por que a MDE Sistemas?</h2>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Experiência em hotelaria</h3>
+          <p>Atuação focada em meios de hospedagem, com visão prática da operação.</p>
+        </div>
+        <div class="card">
+          <h3>Visão de longo prazo</h3>
+          <p>Construção de soluções sustentáveis, pensadas para acompanhar o crescimento do negócio.</p>
+        </div>
+        <div class="card">
+          <h3>Relacionamento próximo</h3>
+          <p>Atendimento humano e consultivo, que entende a realidade do dia a dia da sua equipe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ RESULTADOS (9) ================ -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Foco em resultado real</h2>
+      <p class="empresa-text">
+        Mais do que software, a MDE Sistemas busca apoiar a gestão do negócio, reduzindo retrabalho, melhorando
+        a qualidade das informações e criando um ambiente mais confiável para decisões estratégicas.
       </p>
     </div>
   </section>
 
+  <!-- ================ CONTATO (10) ================ -->
+  <section id="contato" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Contato e atendimento</h2>
 
-  <!-- =================== FOOTER =================== -->
+      <p class="contato-info">
+        📧 E-mail:
+        <a href="mailto:marketing@mde.com.br">marketing@mde.com.br</a><br />
+        📱 WhatsApp:
+        <a href="https://wa.me/5511940277447" target="_blank">(11) 94027-7447</a><br />
+        📍 Praça Sílvio Romero, 149 — Tatuapé, São Paulo - SP
+      </p>
+    </div>
+  </section>
+
+  <!-- ================ FOOTER ================ -->
   <footer class="footer">
     <div class="container">
       © 2025 MDE Sistemas — Tecnologia para hotelaria profissional.
@@ -190,4 +284,5 @@
   </footer>
 
 </body>
+
 </html>
