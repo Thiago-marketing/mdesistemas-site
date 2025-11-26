@@ -475,4 +475,113 @@ body.theme-dark .hero-glass {
   width: auto;
   display: block;
 }
+/* =====================================================
+   HEADER MDE – ENTERPRISE (FINAL)
+===================================================== */
+
+.mde-header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: var(--bg-main);
+  border-bottom: 1px solid var(--card-border);
+  backdrop-filter: blur(12px);
+}
+
+.mde-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+  gap: 24px;
+}
+
+/* LOGO */
+.mde-logo {
+  height: 44px;
+  width: auto;
+}
+
+/* MENU */
+.mde-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.mde-nav a {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-main);
+  transition: 0.25s;
+}
+
+.mde-nav a:hover {
+  color: var(--mde-blue);
+}
+
+/* ACTIONS */
+.mde-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Toggle tema */
+.theme-toggle {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 50px;
+  padding: 8px 16px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+.theme-toggle:hover {
+  background: var(--bg-soft);
+}
+
+/* Botão outline */
+.btn-outline {
+  padding: 10px 22px;
+  border-radius: 50px;
+  border: 2px solid var(--mde-blue);
+  background: transparent;
+  font-weight: 600;
+  color: var(--mde-blue);
+  transition: 0.25s;
+}
+
+.btn-outline:hover {
+  background: var(--mde-blue);
+  color: #fff;
+}
+
+/* Botão primary */
+.btn-primary {
+  padding: 10px 22px;
+  border-radius: 50px;
+  border: 2px solid var(--mde-blue);
+  background: var(--mde-blue);
+  font-weight: 700;
+  color: #fff;
+  transition: 0.25s;
+}
+
+.btn-primary:hover {
+  background: var(--mde-blue-dark);
+  border-color: var(--mde-blue-dark);
+}
+
+/* RESPONSIVO */
+@media (max-width: 980px) {
+  .mde-nav {
+    display: none;
+  }
+}
 
