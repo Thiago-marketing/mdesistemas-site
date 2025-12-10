@@ -1,11 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.querySelector("[data-theme-toggle]");
+  const btn = document.getElementById("theme-toggle");
   const body = document.body;
-  const icon = toggle.querySelector(".icon");
-  const label = toggle.querySelector(".label");
+  const icon = btn.querySelector(".icon");
+  const label = btn.querySelector(".label");
 
+  // Ler do localStorage
   const saved = localStorage.getItem("mde-theme");
-  if (saved === "dark") body.classList.replace("theme-light", "theme-dark");
+  if (saved === "dark") {
+    body.classList.add("theme-dark");
+    body.classList.remove("theme-light");
+  }
 
   function sync() {
     const dark = body.classList.contains("theme-dark");
@@ -15,25 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   sync();
 
-  toggle.addEventListener("click", () => {
+  btn.addEventListener("click", () => {
     const dark = body.classList.toggle("theme-dark");
-    if (!dark) body.classList.add("theme-light");
+    body.classList.toggle("theme-light", !dark);
     localStorage.setItem("mde-theme", dark ? "dark" : "light");
     sync();
   });
-});
-// theme-toggle.js
-const btn = document.getElementById("theme-toggle");
-
-btn.addEventListener("click", () => {
-  document.body.classList.toggle("theme-dark");
-  document.body.classList.toggle("theme-light");
-
-  btn.querySelector(".icon").textContent =
-    document.body.classList.contains("theme-dark") ? "☀️" : "🌙";
-
-  btn.querySelector(".label").textContent =
-    document.body.classList.contains("theme-dark")
-      ? "Modo claro"
-      : "Modo escuro";
 });
